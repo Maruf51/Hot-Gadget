@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 .container {
     margin-bottom: 100px;
 }
@@ -36,6 +40,10 @@ p {
 
 .carousel-indicators li {
     background-color: tomato;
+}
+
+.carousel-indicators li.active {
+    padding: 1px 0;
 }
 
 .title {
@@ -81,3 +89,100 @@ h5 {
     height: 600px;
 }
 
+.cat {
+    text-align: center;
+    font-size: 35px;
+}
+
+.cat::after {
+    content: "";
+    display: block;
+    background-image: linear-gradient(to right, #ffcb00, #ff8300);
+    height: 7px;
+    width: 110px;
+    margin: 12px auto 0 auto;
+    border-radius: 5px;
+}
+
+.cat-left div div {
+    display: table;
+    padding: 0 45px;
+    margin-top: 50px;
+    box-shadow: 1px 1px 40px #d2d2d2;
+}
+
+.cat-left div div img {
+    width: 100px;
+    padding-top: 35px;
+}
+
+.cat-left div div p {
+    padding: 0;
+    margin: 17px 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+.beauty-shoes {
+    position: relative;
+    right: 90px;
+}
+
+.beauty-shoes div {
+    border-radius: 20px 5px 40px 5px;
+}
+
+#bag {
+    border-radius: 5px 20px 5px 40px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+.dropdown {
+    display: none;
+}
+
+#dropdown-hover:hover .dropdown {
+    display: block;
+    position: absolute;
+}
+
+.dropdown a {
+    text-decoration: none;
+    display: table-cell;
+    background-color: #f2f2f2;
+    text-align: center;
+    color: tomato;
+    padding: 10px 18px;
+    box-shadow: 1px 1px 8px #b7b7b7;
+}
+
+.dropdown a:hover {
+    background-image: linear-gradient( to right, #ed70ff, #ff91a6);
+    color: white;
+}
+
+.arrow a {
+    font-size: 50px;
+    position: fixed;
+    right: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.up a {
+    bottom: 47%;
+}
+
+.down a {
+    bottom: 53%;
+}

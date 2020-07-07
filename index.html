@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot Gadget</title>
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet/style.css">
 </head>
@@ -15,7 +16,14 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#home">Home</a>
-                    <a class="nav-item nav-link" href="#product">Product</a>
+                    <div id="dropdown-hover">
+                      <a class="nav-item nav-link" href="#product">Product</a>
+                      <div class="dropdown">
+                        <a href="#smartphone">SmartPhone</a>
+                        <a href="#laptops">Laptops</a>
+                        <a href="#category">Category</a>
+                      </div>
+                    </div>
                     <a class="nav-item nav-link" href="#about-us">About Us</a>
                     <a class="nav-item nav-link" href="#contact-us">Contact Us</a>
                 </div>
@@ -77,7 +85,7 @@
           </div>
     </div>
 
-    <div class="container">
+    <div id="smartphone" class="container">
         <div class="title d-flex justify-content-between
         ">
             <div class="left-text">
@@ -118,7 +126,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="laptops" class="container">
         <div class="title d-flex justify-content-between
         ">
             <div class="left-text">
@@ -159,14 +167,43 @@
         </div>
     </div>
 
+    <div id="category" class="container">
+        <h1 class="cat">Categories</h1>
+        <div class="elements-area d-flex justify-content-between">
+            <div class="cat-left col-6 d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <div id="bag">
+                      <img src="images/Categories/bag.png" alt="">
+                      <p class="cat-p">Bag</p>
+                    </div>
+                </div>
+                <div class="beauty-shoes">
+                  <div>
+                    <img style="display: block;" src="images/Categories/perfume.png" alt="">
+                    <p class="cat-p">Beauty</p>
+                  </div>
+                  <div>
+                    <img src="images/Categories/shoe.png" alt="">
+                    <p class="cat-p">Shoes</p>
+                  </div>
+                </div>
+            </div>
+            <div class="cat-right col-6 d-flex align-items-center">
+                <img style="width: 100%;" src="images/Categories/pale-order.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+      ©2020. All right reserved. Maruf Hossain
+    </footer>
 
 
 
-
-
-
-
-
+    <div>
+      <div class="up arrow"><a href="#">⮙</a></div>
+      <div class="down arrow"><a href="#footer">⮛</a></div>
+    </div>
 
 
 
